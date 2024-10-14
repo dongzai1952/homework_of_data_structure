@@ -1,0 +1,8 @@
+[
+{
+  "directory": "E:/homework/LinkedList/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/MyExe.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\MyExe.dir\\src\\main.cpp.obj -c E:\\homework\\LinkedList\\src\\main.cpp",
+  "file": "E:/homework/LinkedList/src/main.cpp",
+  "output": "CMakeFiles/MyExe.dir/src/main.cpp.obj"
+}
+]
