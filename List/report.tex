@@ -1,0 +1,388 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{ux8865ux5168ux7684ux4ee3ux7801}{%
+\subsection{补全的代码}\label{ux8865ux5168ux7684ux4ee3ux7801}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{/**}
+\CommentTok{ * }\AnnotationTok{@brief}\CommentTok{ 迭代器的前置自减运算符. 用于将迭代器指向上一个节点.}
+\CommentTok{ *}
+\CommentTok{ * }\AnnotationTok{@return}\CommentTok{ const\_iterator\& 上一个节点的迭代器.}
+\CommentTok{ */}
+\NormalTok{const\_iterator }\OperatorTok{\&}\KeywordTok{operator}\OperatorTok{{-}{-}()}
+\OperatorTok{\{}
+\NormalTok{    current }\OperatorTok{=}\NormalTok{ current}\OperatorTok{{-}\textgreater{}}\NormalTok{prev}\OperatorTok{;}
+    \ControlFlowTok{return} \OperatorTok{*}\KeywordTok{this}\OperatorTok{;}
+\OperatorTok{\}}
+
+\CommentTok{/**}
+\CommentTok{ * }\AnnotationTok{@brief}\CommentTok{ 迭代器的后置自减运算符. 用于将迭代器指向上一个节点.}
+\CommentTok{ *}
+\CommentTok{ * }\AnnotationTok{@return}\CommentTok{ const\_iterator 上一个节点的迭代器.}
+\CommentTok{ */}
+\NormalTok{const\_iterator }\KeywordTok{operator}\OperatorTok{{-}{-}(}\DataTypeTok{int}\OperatorTok{)}
+\OperatorTok{\{}
+\NormalTok{    const\_iterator old }\OperatorTok{=} \OperatorTok{*}\KeywordTok{this}\OperatorTok{;}
+    \OperatorTok{{-}{-}(*}\KeywordTok{this}\OperatorTok{);}
+    \ControlFlowTok{return}\NormalTok{ old}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{/**}
+\CommentTok{ * }\AnnotationTok{@brief}\CommentTok{ 迭代器的前置自减运算符. 用于将迭代器指向上一个节点.}
+\CommentTok{ *}
+\CommentTok{ * }\AnnotationTok{@return}\CommentTok{ const\_iterator\& 上一个节点的迭代器.}
+\CommentTok{ */}
+\NormalTok{iterator }\OperatorTok{\&}\KeywordTok{operator}\OperatorTok{{-}{-}()}
+\OperatorTok{\{}
+    \KeywordTok{this}\OperatorTok{{-}\textgreater{}}\NormalTok{current }\OperatorTok{=} \KeywordTok{this}\OperatorTok{{-}\textgreater{}}\NormalTok{current}\OperatorTok{{-}\textgreater{}}\NormalTok{prev}\OperatorTok{;}
+    \ControlFlowTok{return} \OperatorTok{*}\KeywordTok{this}\OperatorTok{;}
+\OperatorTok{\}}
+
+\CommentTok{/**}
+\CommentTok{ * }\AnnotationTok{@brief}\CommentTok{ 迭代器的后置自减运算符. 用于将迭代器指向上一个节点.}
+\CommentTok{ *}
+\CommentTok{ * }\AnnotationTok{@return}\CommentTok{ const\_iterator 上一个节点的迭代器.}
+\CommentTok{ */}
+\NormalTok{iterator }\KeywordTok{operator}\OperatorTok{{-}{-}(}\DataTypeTok{int}\OperatorTok{)}
+\OperatorTok{\{}
+\NormalTok{    iterator old }\OperatorTok{=} \OperatorTok{*}\KeywordTok{this}\OperatorTok{;}
+    \OperatorTok{{-}{-}(*}\KeywordTok{this}\OperatorTok{);}
+    \ControlFlowTok{return}\NormalTok{ old}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux63d2ux5165}{%
+\subsection{测试插入}\label{ux6d4bux8bd5ux63d2ux5165}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{myList}\OperatorTok{.}\NormalTok{push\_back}\OperatorTok{(}\DecValTok{1}\OperatorTok{);}
+\NormalTok{myList}\OperatorTok{.}\NormalTok{push\_back}\OperatorTok{(}\DecValTok{2}\OperatorTok{);}
+\NormalTok{myList}\OperatorTok{.}\NormalTok{push\_front}\OperatorTok{(}\DecValTok{0}\OperatorTok{);}
+\NormalTok{myList}\OperatorTok{.}\NormalTok{push\_front}\OperatorTok{({-}}\DecValTok{1}\OperatorTok{);}
+
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"List after insertions: "}\OperatorTok{;}
+\ControlFlowTok{for} \OperatorTok{(}\KeywordTok{auto}\NormalTok{ it }\OperatorTok{=}\NormalTok{ myList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{();}\NormalTok{ it }\OperatorTok{!=}\NormalTok{ myList}\OperatorTok{.}\NormalTok{end}\OperatorTok{();} \OperatorTok{++}\NormalTok{it}\OperatorTok{)} \OperatorTok{\{}
+    \BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{*}\NormalTok{it }\OperatorTok{\textless{}\textless{}} \StringTok{" "}\OperatorTok{;}
+\OperatorTok{\}}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+首先建立一个空链表，使用\texttt{push\_back}和\texttt{push\_front}插入，并使用迭代器输出
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{List after insertions: {-}1 0 1 2 }
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux5927ux5c0f}{%
+\subsection{测试大小}\label{ux6d4bux8bd5ux5927ux5c0f}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"Size of list: "} \OperatorTok{\textless{}\textless{}}\NormalTok{ myList}\OperatorTok{.}\NormalTok{size}\OperatorTok{()} \OperatorTok{\textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+检查size的正确性
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Size of list: 4}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux524dux540eux5143ux7d20}{%
+\subsection{测试前后元素}\label{ux6d4bux8bd5ux524dux540eux5143ux7d20}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"Front: "} \OperatorTok{\textless{}\textless{}}\NormalTok{ myList}\OperatorTok{.}\NormalTok{front}\OperatorTok{()} \OperatorTok{\textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"Back: "} \OperatorTok{\textless{}\textless{}}\NormalTok{ myList}\OperatorTok{.}\NormalTok{back}\OperatorTok{()} \OperatorTok{\textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Front: {-}1}
+\NormalTok{Back: 2}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux590dux5236ux6784ux9020ux51fdux6570}{%
+\subsection{测试复制构造函数}\label{ux6d4bux8bd5ux590dux5236ux6784ux9020ux51fdux6570}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{List}\OperatorTok{\textless{}}\DataTypeTok{int}\OperatorTok{\textgreater{}}\NormalTok{ copiedList}\OperatorTok{(}\NormalTok{myList}\OperatorTok{);}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"Copied list: "}\OperatorTok{;}
+\ControlFlowTok{for} \OperatorTok{(}\KeywordTok{auto}\NormalTok{ it }\OperatorTok{=}\NormalTok{ copiedList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{();}\NormalTok{ it }\OperatorTok{!=}\NormalTok{ copiedList}\OperatorTok{.}\NormalTok{end}\OperatorTok{();} \OperatorTok{++}\NormalTok{it}\OperatorTok{)} \OperatorTok{\{}
+    \BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{*}\NormalTok{it }\OperatorTok{\textless{}\textless{}} \StringTok{" "}\OperatorTok{;}
+\OperatorTok{\}}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+构造copiedList，并将myList值复制构造
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Copied list: {-}1 0 1 2}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux5220ux9664}{%
+\subsection{测试删除}\label{ux6d4bux8bd5ux5220ux9664}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{myList}\OperatorTok{.}\NormalTok{pop\_back}\OperatorTok{();}
+\NormalTok{myList}\OperatorTok{.}\NormalTok{pop\_front}\OperatorTok{();}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"List after popping front and back: "}\OperatorTok{;}
+\ControlFlowTok{for} \OperatorTok{(}\KeywordTok{auto}\NormalTok{ it }\OperatorTok{=}\NormalTok{ myList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{();}\NormalTok{ it }\OperatorTok{!=}\NormalTok{ myList}\OperatorTok{.}\NormalTok{end}\OperatorTok{();} \OperatorTok{++}\NormalTok{it}\OperatorTok{)} \OperatorTok{\{}
+    \BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{*}\NormalTok{it }\OperatorTok{\textless{}\textless{}} \StringTok{" "}\OperatorTok{;}
+\OperatorTok{\}}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+将前后节点删除
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{List after popping front and back: 0 1}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux6e05ux7a7a}{%
+\subsection{测试清空}\label{ux6d4bux8bd5ux6e05ux7a7a}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{myList}\OperatorTok{.}\NormalTok{clear}\OperatorTok{();}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"List after clearing: "}\OperatorTok{;}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{(}\NormalTok{myList}\OperatorTok{.}\NormalTok{empty}\OperatorTok{()} \OperatorTok{?} \StringTok{"Empty"} \OperatorTok{:} \StringTok{"Not empty"}\OperatorTok{)} \OperatorTok{\textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{List after clearing: Empty}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux8d4bux503cux8fd0ux7b97ux7b26}{%
+\subsection{测试赋值运算符}\label{ux6d4bux8bd5ux8d4bux503cux8fd0ux7b97ux7b26}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{myList}\OperatorTok{.}\NormalTok{push\_back}\OperatorTok{(}\DecValTok{5}\OperatorTok{);}
+\NormalTok{myList}\OperatorTok{.}\NormalTok{push\_back}\OperatorTok{(}\DecValTok{10}\OperatorTok{);}
+\NormalTok{List}\OperatorTok{\textless{}}\DataTypeTok{int}\OperatorTok{\textgreater{}}\NormalTok{ anotherList}\OperatorTok{;}
+\NormalTok{anotherList }\OperatorTok{=}\NormalTok{ myList}\OperatorTok{;}
+
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"Another list after assignment: "}\OperatorTok{;}
+\ControlFlowTok{for} \OperatorTok{(}\KeywordTok{auto}\NormalTok{ it }\OperatorTok{=}\NormalTok{ anotherList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{();}\NormalTok{ it }\OperatorTok{!=}\NormalTok{ anotherList}\OperatorTok{.}\NormalTok{end}\OperatorTok{();} \OperatorTok{++}\NormalTok{it}\OperatorTok{)} \OperatorTok{\{}
+    \BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{*}\NormalTok{it }\OperatorTok{\textless{}\textless{}} \StringTok{" "}\OperatorTok{;}
+\OperatorTok{\}}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+在myList中插入5 10，赋值给anotherList
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Another list after assignment: 5 10}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux63d2ux5165ux5230ux7279ux5b9aux4f4dux7f6e}{%
+\subsection{测试插入到特定位置}\label{ux6d4bux8bd5ux63d2ux5165ux5230ux7279ux5b9aux4f4dux7f6e}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{anotherList}\OperatorTok{.}\NormalTok{insert}\OperatorTok{(}\NormalTok{anotherList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{(),} \DecValTok{20}\OperatorTok{);}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"List after inserting 20 at the front: "}\OperatorTok{;}
+\ControlFlowTok{for} \OperatorTok{(}\KeywordTok{auto}\NormalTok{ it }\OperatorTok{=}\NormalTok{ anotherList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{();}\NormalTok{ it }\OperatorTok{!=}\NormalTok{ anotherList}\OperatorTok{.}\NormalTok{end}\OperatorTok{();} \OperatorTok{++}\NormalTok{it}\OperatorTok{)} \OperatorTok{\{}
+    \BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{*}\NormalTok{it }\OperatorTok{\textless{}\textless{}} \StringTok{" "}\OperatorTok{;}
+\OperatorTok{\}}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+将20插入到anotherList开头
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{List after inserting 20 at the front: 20 5 10}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux5220ux9664ux6307ux5b9aux4f4dux7f6e}{%
+\subsection{测试删除指定位置}\label{ux6d4bux8bd5ux5220ux9664ux6307ux5b9aux4f4dux7f6e}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{anotherList}\OperatorTok{.}\NormalTok{erase}\OperatorTok{(}\NormalTok{anotherList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{());}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"List after erasing front element: "}\OperatorTok{;}
+\ControlFlowTok{for} \OperatorTok{(}\KeywordTok{auto}\NormalTok{ it }\OperatorTok{=}\NormalTok{ anotherList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{();}\NormalTok{ it }\OperatorTok{!=}\NormalTok{ anotherList}\OperatorTok{.}\NormalTok{end}\OperatorTok{();} \OperatorTok{++}\NormalTok{it}\OperatorTok{)} \OperatorTok{\{}
+    \BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{*}\NormalTok{it }\OperatorTok{\textless{}\textless{}} \StringTok{" "}\OperatorTok{;}
+\OperatorTok{\}}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+擦除第一个节点
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{List after erasing front element: 5 10}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux6d4bux8bd5ux8303ux56f4ux5220ux9664}{%
+\subsection{测试范围删除}\label{ux6d4bux8bd5ux8303ux56f4ux5220ux9664}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{anotherList}\OperatorTok{.}\NormalTok{push\_back}\OperatorTok{(}\DecValTok{30}\OperatorTok{);}
+\NormalTok{anotherList}\OperatorTok{.}\NormalTok{push\_back}\OperatorTok{(}\DecValTok{40}\OperatorTok{);}
+\NormalTok{anotherList}\OperatorTok{.}\NormalTok{push\_back}\OperatorTok{(}\DecValTok{50}\OperatorTok{);}
+\NormalTok{anotherList}\OperatorTok{.}\NormalTok{erase}\OperatorTok{(}\NormalTok{anotherList}\OperatorTok{.}\NormalTok{begin}\OperatorTok{(),}\NormalTok{ anotherList}\OperatorTok{.}\NormalTok{end}\OperatorTok{());}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \StringTok{"List after range erase: "}\OperatorTok{;}
+\BuiltInTok{std::}\NormalTok{cout}\OperatorTok{ \textless{}\textless{}} \OperatorTok{(}\NormalTok{anotherList}\OperatorTok{.}\NormalTok{empty}\OperatorTok{()} \OperatorTok{?} \StringTok{"Empty"} \OperatorTok{:} \StringTok{"Not empty"}\OperatorTok{)} \OperatorTok{\textless{}\textless{}} \BuiltInTok{std::}\NormalTok{endl}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+将链表删除
+
+结果：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{List after range erase: Empty}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
