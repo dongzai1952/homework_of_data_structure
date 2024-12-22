@@ -1,0 +1,3 @@
+E:/homework/big_project/build/CMakeFiles/MyExe.dir
+E:/homework/big_project/build/CMakeFiles/edit_cache.dir
+E:/homework/big_project/build/CMakeFiles/rebuild_cache.dir

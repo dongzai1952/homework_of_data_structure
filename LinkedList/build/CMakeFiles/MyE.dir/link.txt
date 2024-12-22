@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\MyE.dir/objects.a
-C:\PROGRA~1\mingw64\bin\ar.exe qc CMakeFiles\MyE.dir/objects.a @CMakeFiles\MyE.dir\objects1.rsp
-C:\PROGRA~1\mingw64\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\MyE.dir/objects.a -Wl,--no-whole-archive -o MyE.exe -Wl,--out-implib,libMyE.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyE.dir\linkLibs.rsp
